@@ -1,0 +1,24 @@
+[workspace]
+members = [
+    "aes",
+    "aria",
+    "belt-block",
+    "blowfish",
+    "camellia",
+    "cast5",
+    "des",
+    "idea",
+    "kuznyechik",
+    "magma",
+    "mkv128",
+    "rc2",
+    "rc5",
+    "serpent",
+    "sm4",
+    "speck",
+    "twofish",
+    "threefish",
+]
+
+[profile.dev]
+opt-level = 2

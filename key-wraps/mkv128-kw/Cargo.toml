@@ -1,0 +1,28 @@
+[package]
+name = "mkv128-kw"
+version = "0.2.1"
+description = "NIST 800-38F MKV128 Key Wrap (KW) and Key Wrap with Padding (KWP) modes"
+authors = ["RustCrypto Developers"]
+license = "MIT OR Apache-2.0"
+homepage = "https://github.com/RustCrypto/key-wraps/"
+repository = "https://github.com/RustCrypto/key-wraps/tree/mkv128-kw"
+keywords = ["crypto", "MKV128-KW", "KW", "MKV128-KWP", "KWP"]
+categories = ["cryptography", "no-std"]
+readme = "README.md"
+edition = "2021"
+rust-version = "1.56"
+
+[dependencies]
+# mkv128 = "0.8.1"
+mkv128 = { path = "../../block-ciphers/mkv128"}
+
+[dev-dependencies]
+hex-literal = "0.3"
+
+[features]
+alloc = []
+std = ["alloc"]
+
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]

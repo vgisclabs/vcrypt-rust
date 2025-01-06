@@ -1,0 +1,8 @@
+[workspace]
+members = [
+    "aes-kw",
+    "mkv128-kw",
+]
+
+[profile.dev]
+opt-level = 2
